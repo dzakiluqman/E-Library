@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\UsersController;
+use App\Models\Users;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +21,6 @@ use App\Http\Controllers\IndexController;
 //    return $request->user();
 //});
 
-Route::get('hello-world', [IndexController::class, 'index']);
+//Route::get('hello-world', [IndexController::class, 'index']);
+
+Route::get('users', [UsersController::class, 'index']);
